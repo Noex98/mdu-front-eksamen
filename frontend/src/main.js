@@ -2,7 +2,7 @@
 import { initJK, Route } from '/jk.js'
 
 // Init global state
-//import './store/global.js'
+import initGlobalState from './store/global.js'
 
 // Views
 import Err404 from './views/Err404/Err404.js'
@@ -21,4 +21,8 @@ const routes = [
     ),
 ]
 
+// Start framework
 initJK(routes)
+
+// Init global state
+initGlobalState()

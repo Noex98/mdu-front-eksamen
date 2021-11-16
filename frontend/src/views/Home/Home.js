@@ -1,4 +1,4 @@
-import { useState, useEffect, Link } from "/jk.js"
+import { useState, useEffect } from "/jk.js"
 
 export default function Home(props){
 
@@ -12,7 +12,7 @@ export default function Home(props){
             setNum(prevNum => prevNum + 1)
         }
 
-        console.log(props)
+        console.log(2)
 
     }, [])
 
