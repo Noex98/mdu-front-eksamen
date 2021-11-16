@@ -4,5 +4,5 @@ export default (() => {
     
     // Init global state here
     useState([jk.global, 'someValue'], 423)
-    
+    console.log(jk)
 })()

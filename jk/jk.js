@@ -1,12 +1,18 @@
-// Export Router
-export { initRouter } from './router.js'
+import { initRouter } from './router.js'
 
 // Export tools
 export * from './tools/index.js'
 
-// Init global jk keyholder
-window.jk = {
-    global: {
-        state: {}
+export function initJK(routes){
+
+    // Init global jk keyholder
+    window.jk = {
+        global: {
+            state: {}
+        }
     }
+
+    initRouter(routes)
+
 }
+

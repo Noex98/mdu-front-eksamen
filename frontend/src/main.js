@@ -1,14 +1,12 @@
-// Route class
-import { initRouter } from '/jk.js'
-import { Route } from '/jk.js'
+// Router
+import { initJK, Route } from '/jk.js'
+
+// Init global state
+//import './store/global.js'
 
 // Views
 import Err404 from './views/Err404/Err404.js'
 import Home from './views/Home/Home.js'
-
-// Init global state
-import './store/global.js'
-
 
 const routes = [
     new Route(
@@ -23,4 +21,4 @@ const routes = [
     ),
 ]
 
-initRouter(routes)
+initJK(routes)
